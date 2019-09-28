@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic-Tac-Toe</title>
+</head>
+<body>
+    <div id="container">
+        <h1 id="title">Tic-Tac-Toe</h1>
+        <!-- <p>X plays first</p> -->
+        <h2 id="player1"></h2>
+        <h2 id="player2"></h2>
+        <div id="info">
+            <label><strong>Player 1</strong></label>
+            <input type="text" id="nameOne" placeholder="Name...">
+            <select id="identiferOne">
+                <option value="X">X</option>
+                <option value="O">O</option>
+            </select>
+            <label><strong>Player 2</strong></label>
+            <input type="text" id="nameTwo" placeholder="Name...">
+            <select id="identiferTwo">
+                <option value="X">X</option>
+                <option value="O" selected="selected">O</option>
+            </select>
+            <button id="getInfo" class="btn">Start Game</button>
+        </div>
+        <div id="display">
+            <div class="square" data-square="0"></div>
+            <div class="square" data-square="1"></div>
+            <div class="square" data-square="2"></div>
+            <div class="square" data-square="3"></div>
+            <div class="square" data-square="4"></div>
+            <div class="square" data-square="5"></div>
+            <div class="square" data-square="6"></div>
+            <div class="square" data-square="7"></div>
+            <div class="square" data-square="8"></div>
+        </div>
+        <div id="buttons">
+            <h2 id="winner"></h2>
+            <button id="restart" class="btn">Restart Game</button>
+            <button id="reload" class="btn">Change Players</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
